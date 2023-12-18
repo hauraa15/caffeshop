@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Caffe Haura</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header id="HOME">
+        <div class="container">
+            <h1>RARA CAFFE</h1>
+            <ul>
+               <li><a href="#" class="tebal">HOME</a></li>
+               <li><a href="about/about.html">TENTANG</a></li>
+               <li><a href="produk/produk.html">PRODUCTS</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- HEADER SELESAI -->
+
+    <!-- background -->
+   <section id="home" class="banner">
+      <div class="banner-text">
+        <h1>Mulai Harimu<br>Dengan Coffee</h1>
+        <p>Ngopi dulu bang, biar pas nikung pacar temen nggak kalah sama ngantuk</p>
+        <a onclick="document.getElementById('id01').style.display='block'" class="btn" style="cursor: pointer;">LOGIN</a>
+      </div>
+      <div class="banner-img">
+        <img src="img/main.png" class="anu" alt="">
+      </div>
+   </section>
+    <!-- background SELESAI -->
+
+        <!-- LOGIN -->
+        <div id="id01" class="modal">
+          <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+        
+            <div class="container3">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+                
+              <button type="submit" href="#">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+        
+            <div class="container3" style="background-color:#c0bebe">
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        <!-- LOGIN SELESAI -->
+    <script>
+      var modal = document.getElementById('id01');
+
+      window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+       }
+    }
+    </script>
+
+</body>
+</html>
